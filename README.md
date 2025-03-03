@@ -18,21 +18,25 @@ pip install numpy matplotlib scipy
 ### Running the Script
 The main script allows users to visualize audio waveforms and frequency spectra. Run it using:
 ```bash
-python main.py path/to/audio.wav --fourier waveform
+python main.py path/to/audio.wav --fourier
 ```
 
 ### Command-Line Arguments
 - `audio_file` (required): Path to the WAV audio file.
-- `--fourier` (optional): Choose between `waveform` (default) and `fourier`.
+- `--fourier` (optional): Flag for if you want to show the fourier.
   
 #### Example Usage
 1. **Plot Waveform:**
    ```bash
-   python main.py example.wav --fourier waveform
+   python main.py example.wav
    ```
 2. **Plot Fourier Transform:**
    ```bash
-   python main.py example.wav --fourier fourier
+   python main.py example.wav --fourier
+   ```
+3. **Plot Waveform and Fourier Transform Side by Side:**
+   ```bash
+   python side-by-side.py example.wav --fourier
    ```
 
 ## File Structure
